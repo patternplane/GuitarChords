@@ -63,6 +63,10 @@ public class Chord {
 	}
 
 	public Chord(Note root, ChordType type) {
+		changeChord(root,type);
+	}
+	
+	public void changeChord(Note root, ChordType type) {
 		this.root = root;
 		this.type = type;
 		this.formingNotes = getChordElements(root, type);
